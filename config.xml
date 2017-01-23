@@ -103,7 +103,7 @@
     <string>100</string>
     </gap:config-file>
 
-    <content src="https://londonreal.tv" />
+    <content src="https://londonreal.tv/" />
     <access origin="*" subdomains="true" />
     <allow-navigation href="*" /><!-- iOS render iframe content -->
     <!-- https://github.com/phonegap/build/issues/508 -->

@@ -104,7 +104,7 @@
     </gap:config-file>
 
     <content src="index.html" />
-    <access origin="*" subdomains="true" />
+    <access origin="https://londonreal.tv" subdomains="true" />
     <allow-navigation href="*" /><!-- iOS render iframe content -->
     <!-- https://github.com/phonegap/build/issues/508 -->
     <allow-intent href="tel:*" />

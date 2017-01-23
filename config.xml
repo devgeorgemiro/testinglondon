@@ -103,20 +103,18 @@
     <string>100</string>
     </gap:config-file>
 
-    <content src="index.html" />
-    <access origin="https://londonreal.tv" subdomains="true" />
-    <allow-navigation href="*" /><!-- iOS render iframe content -->
-    <!-- https://github.com/phonegap/build/issues/508 -->
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
+        Define access to external domains.
+        <access />            - a blank access tag denies access to all external resources.
+        <access origin="*" /> - a wildcard access tag allows access to all external resource.
+        Otherwise, you can specify specific domains:
+    -->
+
+    <access origin="*"/>
+
+
+        <access origin="https://londonreal.tv" />                    - allow any secure requests to http://phonegap.com/
+        <access origin="https://londonreal.tv" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
+        <access origin="https://londonreal.tv" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
+
 
 </widget>
